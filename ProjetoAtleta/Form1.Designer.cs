@@ -41,11 +41,12 @@
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtIMC = new System.Windows.Forms.TextBox();
             this.lblIMC = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(33, 37);
+            this.txtNome.Location = new System.Drawing.Point(31, 59);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(180, 20);
             this.txtNome.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             // txtIdade
             // 
-            this.txtIdade.Location = new System.Drawing.Point(240, 37);
+            this.txtIdade.Location = new System.Drawing.Point(238, 59);
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.Size = new System.Drawing.Size(180, 20);
             this.txtIdade.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             // txtAltura
             // 
-            this.txtAltura.Location = new System.Drawing.Point(33, 90);
+            this.txtAltura.Location = new System.Drawing.Point(31, 112);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(180, 20);
             this.txtAltura.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(240, 90);
+            this.txtPeso.Location = new System.Drawing.Point(238, 112);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(180, 20);
             this.txtPeso.TabIndex = 3;
@@ -84,7 +85,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Marlett", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(44, 18);
+            this.lblNome.Location = new System.Drawing.Point(42, 40);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(48, 16);
             this.lblNome.TabIndex = 4;
@@ -96,7 +97,7 @@
             this.lblIdade.AutoSize = true;
             this.lblIdade.BackColor = System.Drawing.Color.Transparent;
             this.lblIdade.Font = new System.Drawing.Font("Marlett", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdade.Location = new System.Drawing.Point(252, 18);
+            this.lblIdade.Location = new System.Drawing.Point(250, 40);
             this.lblIdade.Name = "lblIdade";
             this.lblIdade.Size = new System.Drawing.Size(47, 16);
             this.lblIdade.TabIndex = 5;
@@ -108,7 +109,7 @@
             this.lblAltura.AutoSize = true;
             this.lblAltura.BackColor = System.Drawing.Color.Transparent;
             this.lblAltura.Font = new System.Drawing.Font("Marlett", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAltura.Location = new System.Drawing.Point(43, 71);
+            this.lblAltura.Location = new System.Drawing.Point(41, 93);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(49, 16);
             this.lblAltura.TabIndex = 6;
@@ -120,7 +121,7 @@
             this.lblPeso.AutoSize = true;
             this.lblPeso.BackColor = System.Drawing.Color.Transparent;
             this.lblPeso.Font = new System.Drawing.Font("Marlett", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPeso.Location = new System.Drawing.Point(252, 71);
+            this.lblPeso.Location = new System.Drawing.Point(250, 93);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(43, 16);
             this.lblPeso.TabIndex = 7;
@@ -130,7 +131,7 @@
             // btnCalculo
             // 
             this.btnCalculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculo.Location = new System.Drawing.Point(240, 135);
+            this.btnCalculo.Location = new System.Drawing.Point(238, 157);
             this.btnCalculo.Name = "btnCalculo";
             this.btnCalculo.Size = new System.Drawing.Size(123, 32);
             this.btnCalculo.TabIndex = 8;
@@ -141,7 +142,7 @@
             // btnEnviar
             // 
             this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.Location = new System.Drawing.Point(90, 135);
+            this.btnEnviar.Location = new System.Drawing.Point(88, 157);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(123, 32);
             this.btnEnviar.TabIndex = 9;
@@ -153,7 +154,7 @@
             // 
             this.txtIMC.Enabled = false;
             this.txtIMC.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIMC.Location = new System.Drawing.Point(178, 214);
+            this.txtIMC.Location = new System.Drawing.Point(176, 236);
             this.txtIMC.Name = "txtIMC";
             this.txtIMC.Size = new System.Drawing.Size(90, 34);
             this.txtIMC.TabIndex = 10;
@@ -165,12 +166,23 @@
             this.lblIMC.AutoSize = true;
             this.lblIMC.BackColor = System.Drawing.Color.Transparent;
             this.lblIMC.Font = new System.Drawing.Font("Marlett", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIMC.Location = new System.Drawing.Point(182, 187);
+            this.lblIMC.Location = new System.Drawing.Point(180, 209);
             this.lblIMC.Name = "lblIMC";
             this.lblIMC.Size = new System.Drawing.Size(83, 16);
             this.lblIMC.TabIndex = 11;
             this.lblIMC.Text = "Resultado:";
             this.lblIMC.Click += new System.EventHandler(this.lblIMC_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 12F);
+            this.label1.Location = new System.Drawing.Point(205, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 23);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "IMC";
             // 
             // Form1
             // 
@@ -178,7 +190,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(452, 267);
+            this.ClientSize = new System.Drawing.Size(452, 291);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblIMC);
             this.Controls.Add(this.txtIMC);
             this.Controls.Add(this.btnEnviar);
@@ -215,6 +228,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.TextBox txtIMC;
         private System.Windows.Forms.Label lblIMC;
+        private System.Windows.Forms.Label label1;
     }
 }
 
