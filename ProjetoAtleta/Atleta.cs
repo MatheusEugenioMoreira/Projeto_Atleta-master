@@ -67,7 +67,7 @@ namespace ProjetoAtleta
 
         public double CalcularIMC()
         {
-            return this.peso / (this.altura * this.altura);
+            return this.peso / (this.altura * this.altura) * 10000;
 
         }
 
